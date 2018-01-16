@@ -1,13 +1,61 @@
 @import "vars"
 
+=xxl-width($columnCount)
+  flex: 0 0 ((100%/16)*$columnCount)
+  max-width: ((100%/16)*$columnCount)
+
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1849px)
+  .portfolio .portfolio-cont .item
+    padding: 0px
+  .brand-slider
+    padding: 0 100px
+  .news-sec .prev .title-n
+    padding-left: 30px
 @media only screen and (max-width : 1200px)
-  /**/
+  .portfolio .portfolio-cont .item
+    padding: 0px
+  .main-menu ul li
+    margin-left: 14px
+    a
+      font-size: 13px
+  .main-direction .img-cont .txt-i
+    text-align: center
+    padding: 0 15px
+  .main-direction .cont-c
+    padding: 15px 60px
+  .main-direction .cont-c .h3
+    margin-bottom: 15px
+  #my-footer .foot-m
+    margin-bottom: 50px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-  /**/
+  .contacts-h-c
+    display: flex
+    justify-content: space-around
+  #my-header .slogan .s-item:nth-child(2)
+    font-weight: 900
+    font-size: 12px
+    color: #154f98
+    padding-left: 85px
+    white-space: nowrap
+  #my-header .slogan .s-item:first-child
+    padding-left: 18px
+  .main-slider
+    margin-top: 15px
+  .about-company
+    padding-top: 60px
+    .img-cont img
+      margin-bottom: 30px
+  .portfolio
+    padding-top: 60px
+    margin-bottom: 60px
+  .portfolio .portfolio-cont .item .prev-cont .prev
+    min-height: 240px
+  .news-sec
+    padding: 60px 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .content
@@ -19,9 +67,38 @@
         display: block
         min-width: 500px
         width: 100%
+  .main-direction .cont-c
+    min-height: 270px
+  .main-direction
+    padding-top: 60px
+  .portfolio .portfolio-cont .item .title-h
+    padding-bottom: 0px
+    min-height: auto
+  .portfolio .portfolio-cont .item
+    margin-bottom: 30px
+  .news-sec .prev .title-n
+    min-height: 300px
+    display: flex
+    align-items: center
+  .news-sec .prev
+    margin-bottom: 30px
+  .news-feed-s
+    margin-top: 30px
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 576px)
-  /**/
+  .logo-svg-h
+    transform: scale(0.7)
+  #my-header .contacts-h a
+    font-size: 12px
+  .main-slider .item .prev
+    min-height: 80vh
+  .main-direction .cont-c
+    padding: 0px
+    padding-left: 20px
+  .main-direction .img-cont .txt-i
+    padding-left: 15px
+  .brand-slider
+    padding: 0 60px
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -52,3 +129,79 @@
     width: 1170px
     max-width: 100%
 
+@media only screen and (min-width : 1850px)
+  //my custom grid
+  .mym-cont
+    display: none!important
+  #menu-btn
+    display: none
+  .main-menu
+    display: block
+  .container
+    width: 1536px
+    max-width: 100%
+  .col-xxl-1
+    +xxl-width(1)
+  .col-xxl-2
+    +xxl-width(2)
+  .col-xxl-3
+    +xxl-width(3)
+  .col-xxl-4
+    +xxl-width(4)
+  .col-xxl-5
+    +xxl-width(5)
+  .col-xxl-6
+    +xxl-width(6)
+  .col-xxl-7
+    +xxl-width(7)
+  .col-xxl-8
+    +xxl-width(8)
+  .col-xxl-9
+    +xxl-width(9)
+  .col-xxl-10
+    +xxl-width(10)
+  .col-xxl-11
+    +xxl-width(11)
+  .col-xxl-12
+    +xxl-width(12)
+  .col-xxl-13
+    +xxl-width(13)
+  .col-xxl-14
+    +xxl-width(14)
+  .col-xxl-15
+    +xxl-width(15)
+  .col-xxl-16
+    +xxl-width(16)
+
+  .offset-xxl-1
+    +m-offset-xxl(1)
+  .offset-xxl-2
+    +m-offset-xxl(2)
+  .offset-xxl-3
+    +m-offset-xxl(3)
+  .offset-xxl-4
+    +m-offset-xxl(4)
+  .offset-xxl-5
+    +m-offset-xxl(5)
+  .offset-xxl-6
+    +m-offset-xxl(6)
+  .offset-xxl-7
+    +m-offset-xxl(7)
+  .offset-xxl-8
+    +m-offset-xxl(8)
+  .offset-xxl-9
+    +m-offset-xxl(9)
+  .offset-xxl-10
+    +m-offset-xxl(10)
+  .offset-xxl-11
+    +m-offset-xxl(11)
+  .offset-xxl-12
+    +m-offset-xxl(12)
+  .offset-xxl-13
+    +m-offset-xxl(13)
+  .offset-xxl-14
+    +m-offset-xxl(14)
+  .offset-xxl-15
+    +m-offset-xxl(15)
+  .offset-xxl-16
+    +m-offset-xxl(16)
