@@ -499,18 +499,16 @@ html.mm-opening .mm-menu~.mm-slideout
 	-webkit-border-radius: 4px
 	border-radius: 4px
 	margin: 15px 0px
-	margin-top: 45px
 	text-align: left
-	padding-left: 49px
+	margin-bottom: 60px
 	li
 		display: inline-block
 		font-size: 14px
 		&.active
 			span
-				border-bottom: solid 1px #989898
-				color: #989898
+				color: $dark
 		a
-			color: #989898
+			color: $dark
 			&:hover, &:focus
 				color: $accent
 				text-decoration: none
@@ -787,10 +785,11 @@ html.mm-opening .mm-menu~.mm-slideout
 
 
 .btn-transparent
-	border: solid 1px $accent
-	border-radius: 5px
+	border: solid 2px $accent
 	padding: 10px 50px
-	font-size: 23px
+	font-size: 18px
+	font-weight: 700
+	color: $accent
 	svg
 		position: relative
 		top: 7px
@@ -798,6 +797,9 @@ html.mm-opening .mm-menu~.mm-slideout
 	&:after
 		content: ''
 		width: 100%
+	&:hover
+		background: $accent
+		color: #FFFFFF
 /*buttons end*/
 
 /*my custom select start*/
@@ -1225,5 +1227,33 @@ html.mm-opening .mm-menu~.mm-slideout
 				&:hover
 					text-decoration: underline
 /*Project end*/
+
+/*news Page start*/
+.news-feed
+	margin-top: 60px
+	.item-n
+		border-bottom: solid 1px #e3e3e3
+		padding-bottom: 30px
+		margin-bottom: 90px
+		img
+			width: 100%
+		.h2
+			font-size: 30px
+			color: $dark
+			text-transform: uppercase
+			margin-bottom: 28px
+		.date
+			display: flex
+			align-items: center
+			.svg-cont
+				padding-right: 10px
+		.intro-txt
+			margin-top: 28px
+		.img-c
+			p
+				font-size: 14px
+				font-style: italic
+				margin-top: 25px
+/*news Page end*/
 
 @import "media" // Всегда в конце
