@@ -274,11 +274,11 @@ html.mm-opening .mm-menu~.mm-slideout
 	transform: translate(0px,0)!important
 	transform: translate3d(0,0,0)!important
 #my-menu
-	background: $grey-l
+	background: #ffffff
 	z-index: 12
 	top: 50px
-	max-width: 325px
 	border-left: solid 1px $grey
+	min-width: 100vw
 	&:not(.mm-menu)
 		display: none
 	.mm-title
@@ -303,7 +303,7 @@ html.mm-opening .mm-menu~.mm-slideout
 		color: $dark
 		border-left-color: transparent
 		&:after
-			border-color: #FFFFFF
+			border-color: $accent
 	.mm-listview
 		position: relative
 		li
@@ -335,6 +335,9 @@ html.mm-opening .mm-menu~.mm-slideout
 			&:first-child a
 				padding-top: 10px
 				margin-top: 10px
+#my-menu.mm-menu .mm-btn:after, #my-menu.mm-menu .mm-btn:before
+	border-color: $accent
+
 .content
 	h1
 		text-align: left
@@ -863,7 +866,9 @@ html.mm-opening .mm-menu~.mm-slideout
 
 #my-header
 	position: relative
-	overflow: hidden
+	//overflow: hidden
+	.lvl1-c
+		overflow: hidden
 	.slogan
 		height: 100%
 		display: flex
@@ -887,6 +892,10 @@ html.mm-opening .mm-menu~.mm-slideout
 		background-image: url("../img/bgBridge2.png")
 		background-repeat: no-repeat
 		background-position: right
+		background-size: cover
+		.logo-svg-h
+			object
+				pointer-events: none
 		&:after
 			content: ''
 			border-bottom: 1px solid $accent
@@ -894,12 +903,26 @@ html.mm-opening .mm-menu~.mm-slideout
 			left: -2000px
 			position: absolute
 			min-width: 6000px
+		.logo-svg-h-c
+			p
+				font-size: 12px
+				text-align: left
+				text-transform: uppercase
+				margin-bottom: 0
+				white-space: nowrap
 	.contacts-h
 		display: flex
 		flex-direction: column
 		text-align: right
 		justify-content: center
 		height: 100%
+		.fa
+			border-radius: 20%
+			background-color: #dcdcdc
+			padding: 5px
+			margin-left: 5px
+			width: 32px
+			text-align: center
 		a
 			font-size: 19px
 			font-weight: 900
@@ -982,13 +1005,48 @@ html.mm-opening .mm-menu~.mm-slideout
 		li
 			display: inline-block
 			margin-left: 30px
+			position: relative
+			z-index: 2
+			padding: 31px 0
 			&:first-child
 				margin-left: 0px
 			a
 				font-size: 14px
 				font-weight: 900
 				text-transform: uppercase
-
+			ul
+				padding: 0px
+			&:hover>.subm
+				display: block
+			.subm
+				display: none
+				min-width: 300px
+				position: absolute
+				top: 88px
+				//bottom: 0px
+				left: 0px
+				background: #FFFFFF
+				text-align: left
+				padding: 20px 23px
+				z-index: 2
+				border-top: solid 2px $accent
+				li
+					text-align: left
+					margin: 0px
+					border: none
+					display: block
+					line-height: 1.2
+					margin-bottom: 15px
+					padding: 0px
+					&:last-child
+						margin-bottom: 0px
+					a
+						font-size: 18px
+						text-transform: none
+						color: $dark
+						font-weight: 500
+						&:hover
+							color: $accent
 .sec-h2
 	font-size: 30px
 	font-weight: 900
@@ -1037,10 +1095,13 @@ html.mm-opening .mm-menu~.mm-slideout
 		p
 			text-transform: uppercase
 			font-weight: 500
+			margin-bottom: 0px
 		.img-cont
 			position: absolute
 			left: 0px
 			right: 0px
+			top: 0px
+			bottom: 0px
 			transition: all .3s ease
 	.img-cont
 		min-height: 400px
@@ -1195,6 +1256,14 @@ html.mm-opening .mm-menu~.mm-slideout
 		p
 			color: #FFFFFF
 			font-size: 16px
+		.fa
+			border-radius: 20%
+			background-color: #fff
+			padding: 4px
+			margin-right: 5px
+			width: 27px
+			text-align: center
+			margin-top: 5px
 	.foot-m
 		margin: 0px
 		padding: 0px
@@ -1240,6 +1309,7 @@ html.mm-opening .mm-menu~.mm-slideout
 		.intro-txt
 			margin-top: 28px
 		.img-c
+			border: solid 1px $grey-l
 			p
 				font-size: 14px
 				font-style: italic
