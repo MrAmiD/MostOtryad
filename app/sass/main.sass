@@ -269,10 +269,59 @@ input
 	display: flex
 	align-items: center
 
+.year-filter-c
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	height: 100%
+	.txt-filter
+		padding-right: 15px
+		font-weight: 700
+		line-height: 1.3
+		color: $grey-dark
+		color: $accent
 
 html.mm-opening .mm-menu~.mm-slideout
 	transform: translate(0px,0)!important
 	transform: translate3d(0,0,0)!important
+
+.jq-selectbox
+	max-width: 100%
+	width: 165px
+	border: solid 1px $grey-l
+	border-radius: 5px
+	.jq-selectbox__dropdown
+		max-width: 165px
+	.jq-selectbox__select
+		background: #FFFFFF
+		box-shadow: none
+		font-family: $default-font
+		border-color: $grey
+	.jq-selectbox__trigger
+		border-color: transparent
+	li
+		&:hover
+			background-color: $accent!important
+		&.selected.sel
+			background: lighten($accent, 10)
+	ul
+		max-width: 100%
+	.jq-selectbox__dropdown
+		max-width: 100%
+	.jq-selectbox__trigger
+		background: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="7px"> <path fill-rule="evenodd"  fill="rgb(54, 52, 52)" d="M10.590,-0.009 L6.000,4.314 L1.410,-0.009 L-0.000,1.322 L6.000,6.985 L12.000,1.322 L10.590,-0.009 Z"/></svg>')
+		background-repeat: no-repeat
+		background-position: center
+	.jq-selectbox__trigger-arrow
+		border: none
+	.jq-selectbox__select-text
+		max-width: 100%
+		min-width: 100%
+	li
+		white-space: inherit
+		&:nth-child(odd)
+			background: lighten($grey, 10)
+
 #my-menu
 	background: #ffffff
 	z-index: 12

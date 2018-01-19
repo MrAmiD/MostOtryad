@@ -17,7 +17,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
-	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.5.10/css/ripples.min.css"/>
 	<!-- Chrome, Firefox OS and Opera -->
@@ -40,37 +40,48 @@
 <!--Top Arrow end-->
 
 <div id="my-header">
-	<div class="container">
-		<div class="row lvl1">
-			<div class="col-5 col-sm-6 col-md-2 col-xxl-2">
-				<div class="svg-cont logo-svg-h">
-					<object type="image/svg+xml" data="icons/logo heder.svg" width="155">
-						Your browser does not support SVG
-					</object>
-				</div>
-			</div>
-			<div class="col-12 col-md-4 col-lg-5 col-xl-4 col-xxl-5 hidden-sm-down">
-			 	<div class="slogan">
-					<div class="s-item">Строим мосты  —</div>
-					<div class="s-item">развивается экономика</div>
-				</div>
-			</div>
-			<div class="col-7 col-sm-6 col-md-6 col-lg-5 col-xl-6 col-xxl-9 contacts-h-c">
-				<div class="contacts-h">
-					<a href="tel:+73422997901">+7 (342) 299-79-01</a>
-					<a href="mailto:info@most123.ru">info@most123.ru</a>
-				</div>
-				<div class="menu-m-b hidden-lg-up">
-					<a href="#my-menu" class="hamburger hamburger--squeeze js-hamburger" type="button" id="menu-btn">
-						<span class="hamburger-box">
-							<span class="hamburger-inner"></span>
-						</span>
-					</a>
-					<nav id="my-menu">
-					</nav>
+	<div class="container-fluid lvl1-c">
+		<div class="row">
+			<div class="col-12">
+				<div class="container">
+					<div class="row lvl1">
+						<a href="/" class="col-5 col-sm-6 col-md-2 col-xxl-2 logo-svg-h-c">
+							<div class="svg-cont logo-svg-h">
+								<object type="image/svg+xml" data="icons/logo heder.svg" width="155">
+									Your browser does not support SVG
+								</object>
+							</div>
+							<p style="">ЗАО "Уралмостострой"</p>
+						</a>
+						<div class="col-12 col-md-4 col-lg-5 col-xl-4 col-xxl-5 hidden-sm-down">
+							<div class="slogan">
+								<div class="s-item">Строим мосты  —</div>
+								<div class="s-item">развивается экономика</div>
+							</div>
+						</div>
+						<div class="col-7 col-sm-6 col-md-6 col-lg-5 col-xl-6 col-xxl-9 contacts-h-c">
+							<div class="contacts-h">
+								<a href="tel:+7 (342) 299-79-01">+7 (342) 299-79-01</a>
+								<a href="mailto:info@most123.ru">info@most123.ru</a>
+
+								<span><a href="https://vk.com/"><i class="fa fa-vk" aria-hidden="true"></i> </a><a href="https://vk.com/"><i class="fa fa-facebook" aria-hidden="true"></i> </a><a href="https://vk.com/"><i class="fa fa-youtube" aria-hidden="true"></i> </a></span>
+							</div>
+							<div class="menu-m-b hidden-lg-up">
+								<a href="#my-menu" class="hamburger hamburger--squeeze js-hamburger" type="button" id="menu-btn">
+									<span class="hamburger-box">
+										<span class="hamburger-inner"></span>
+									</span>
+								</a>
+								<nav id="my-menu">
+								</nav>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="container">
 		<div class="row lvl2">
 			<div class="col-xxl-14 col-12 main-menu hidden-md-down">
 				<ul >
@@ -82,13 +93,38 @@
 					</a></li>
 					<li><a href="">
 						Производство и услуги
-					</a></li>
+					</a>
+						<ul class="subm">
+							<li><a href="">
+								Цены и номенклатура
+							</a></li>
+							<li><a href="">
+								Металлоконструкции
+							</a></li>
+							<li><a href="">
+								Бетон и растворы
+							</a></li>
+							<li><a href="">
+								Аренда транспорта
+							</a></li>
+							<li><a href="">
+								Диагностика и обслуживание мостов
+							</a></li>
+							<li><a href="">
+								Проектирование и инженерное сопровождение
+							</a></li>
+							<li><a href="">
+								Содержание мостов и дорог
+							</a></li>
+						</ul>
+					</li>
 					<li><a href="">
 						Тендеры
 					</a></li>
 					<li><a href="">
 						Новости
-					</a></li>
+					</a>
+					</li>
 					<li><a href="">
 						Объекты
 					</a></li>
@@ -112,10 +148,28 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 col-md-6">
 				<h1 class="h1">
 					НОВОСТИ
 				</h1>
+			</div>
+			<div class="col-12 col-md-6">
+				<div class="row">
+					<div class="col-12 year-filter-c">
+						<div class="txt-filter">
+							Сортировать по годам:
+						</div>
+						<select>
+							<option>2012</option>
+							<option>2013</option>
+							<option>2014</option>
+							<option>2015</option>
+							<option>2016</option>
+							<option>2017</option>
+							<option>2018</option>
+						</select>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
